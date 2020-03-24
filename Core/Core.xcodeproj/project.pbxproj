@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33576C402429D8BC00834137 /* DummyCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33576C3F2429D8BC00834137 /* DummyCore.swift */; };
 		33F0F9752429CF4E006F0AA7 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F0F9732429CF4E006F0AA7 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33576C3F2429D8BC00834137 /* DummyCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCore.swift; sourceTree = "<group>"; };
 		33F0F9702429CF4E006F0AA7 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F0F9732429CF4E006F0AA7 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		33F0F9742429CF4E006F0AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				33F0F9732429CF4E006F0AA7 /* Core.h */,
 				33F0F9742429CF4E006F0AA7 /* Info.plist */,
+				33576C3F2429D8BC00834137 /* DummyCore.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					33F0F96F2429CF4E006F0AA7 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33576C402429D8BC00834137 /* DummyCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		33F0F9792429CF4E006F0AA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = billbill.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		33F0F97A2429CF4E006F0AA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
